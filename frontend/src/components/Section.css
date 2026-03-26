@@ -1,0 +1,27 @@
+.section{
+    background-color: var(--social-bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    padding: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+hr {
+    width: 100%;
+}
+
+.stat-choice{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.stat-choice p{
+    margin-left: .5rem;
+}
+

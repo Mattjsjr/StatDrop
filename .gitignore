@@ -1,0 +1,10 @@
+backend/obpenv/
+__pycache__/
+*.__pycache__
+
+#Node
+frontend/node_modules/
+
+# Editor/OS
+.DS_Store
+.vscode/

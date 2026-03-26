@@ -1,0 +1,13 @@
+main{
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-button{
+  width: 50%;
+  align-self: center;
+  padding: 2%;
+}

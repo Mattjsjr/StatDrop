@@ -1,0 +1,5 @@
+.banner {
+    background-color: var(--accent-bg);
+    color: white;
+    text-align: center;
+}

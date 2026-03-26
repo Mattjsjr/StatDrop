@@ -1,0 +1,11 @@
+.standings-table{
+    border: 1px solid black;
+}
+
+.standings-table th{
+    background-color: var(--accent-bg);
+}
+
+.standings-table tr:nth-child(odd){
+    background-color: var(--social-bg);
+}
