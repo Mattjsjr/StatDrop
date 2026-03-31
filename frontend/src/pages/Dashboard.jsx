@@ -10,16 +10,17 @@ function Dashboard(){
         <Banner title={"Baseball Predictor"}></Banner>
         <main>
             <Section title={"Select Stats:"}>
-            <div className="choice-container">
-            </div>            
-
+                <div className="choice-container"></div>            
                 <button className='section-button'>Train Model</button>
-                </Section>
+            </Section>
             <Section title={"Model Settings:"} footer={<p>R2 Score</p>}>
-            <p>Insert image</p>
+                <p>Insert image</p>
             </Section>
             <Section title={"Results:"}>
-            <StandingsTable></StandingsTable>
+                <StandingsTable></StandingsTable>
+            </Section>
+            <Section title={"Selected Document"}>
+
             </Section>
         </main>
         </>
