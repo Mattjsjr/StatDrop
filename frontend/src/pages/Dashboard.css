@@ -1,0 +1,6 @@
+.file-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}

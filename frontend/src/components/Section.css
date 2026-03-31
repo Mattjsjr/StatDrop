@@ -9,6 +9,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
+    margin: 0 0 0 3%;
 }
 
 hr {
