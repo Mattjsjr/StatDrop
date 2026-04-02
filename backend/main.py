@@ -55,10 +55,9 @@ def predict(model, stat1, stat2):
     return prediction
 
 def get_headers(file_name):
-    file = pd.read_csv(file_name)
 
-    headers = file.iloc[0]
-    return headers
+    df = pd.read_excel(file_name)
+    return df.columns.tolist()
 
 if __name__ == '__main__':
 

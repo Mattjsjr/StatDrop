@@ -14,7 +14,7 @@ DEFAULT_FILE = r'C:\Users\Mattj\Documents\Projects\TeamPrediction\excel\total_te
 def home():
     return "API is running"
 
-@app.route('/api/stats', method=['POST'])
+@app.route('/api/stats', methods=['POST'])
 def get_stats():
     
     '''
@@ -24,12 +24,16 @@ def get_stats():
     Call get_headers
     '''
 
+    UPLOAD_FOLDER = "uploads"
+
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
     if 'file' in request.files:
         file = request.files['file']
 
         if file.filename != "":
             filename = secure_filename(file.filename)
-            filepath = os.path.join("uploads", filename)
+            filepath = os.path.join(UPLOAD_FOLDER, filename)
             file.save(filepath)
         else:
             filepath = DEFAULT_FILE
@@ -54,3 +58,5 @@ def predict_route():
     except:
         return
          
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
