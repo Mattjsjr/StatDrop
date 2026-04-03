@@ -20,19 +20,8 @@ export const useFileHandler = () => {
             setFile(selectedFile);
             console.log(`Selected file type ${selectedFile.name}`);
             fileData.append('file', selectedFile);
-            try{
-                const response = await fetch('http://localhost:5000/api/stats', {
-                    method: 'POST',
-                    body: fileData,
-                });
-
-                const data = await response.json();
-                console.log(`Headers from flask: ${data}`);
-                navigate("/dashboard", {state: {fileName: selectedFile.name}});
-
-            } catch (error) {
-                console.log(`Upload failed ${error}`)
-            }
+            
+            navigate("/dashboard", {state: {file: selectedFile}});
 
         } else {
             alert("Please upload a valid file");
